@@ -11,7 +11,11 @@ export const Board = props => {
                 <tbody>
                 {props.board.map((row, x) => (
                     <tr key={x}>{row.map((cell, y) => (
-                        <Cell key={y} x={props.board[x][y].X} y={props.board[x][y].Y}/>
+                        <Cell key={y}
+                              x={props.board[x][y].X}
+                              y={props.board[x][y].Y}
+                              status={props.board[x][y].status}
+                        />
                     ))}
                     </tr>
                 ))}

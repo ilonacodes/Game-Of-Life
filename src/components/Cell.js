@@ -1,5 +1,5 @@
 import React from "react";
 
-export const Cell = () => {
-    return <td>.</td>
+export const Cell = props => {
+    return <td className={props.status == 'new' ? 'new' : ''}></td>
 };

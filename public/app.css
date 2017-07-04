@@ -1,3 +1,41 @@
+html {
+  height: 100%; }
 
+body {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; }
+
+.container {
+  flex: 1; }
+
+table {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+tr {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap; }
+
+td {
+  border: 2px solid #333;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+
+td:hover {
+  background-color: #ccc; }
+
+.new {
+  background-color: #E7E4DF; }
+  .new:hover {
+    background-color: #b0a796; }
 
 /*# sourceMappingURL=app.css.map */
