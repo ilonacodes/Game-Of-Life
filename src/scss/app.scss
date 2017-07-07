@@ -1,4 +1,4 @@
-$new: #97B1A6;
+$alive: #97B1A6;
 $td-color: #333;
 $td-hover: #ccc;
 
@@ -44,11 +44,11 @@ td:hover {
   background-color: $td-hover;
 }
 
-.new {
-  background-color: $new;
+.alive {
+  background-color: $alive;
 
   &:hover {
-    background-color: darken($new, 25%);
+    background-color: darken($alive, 25%);
   }
 }
 

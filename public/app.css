@@ -33,9 +33,9 @@ td {
 td:hover {
   background-color: #ccc; }
 
-.new {
+.alive {
   background-color: #97B1A6; }
-  .new:hover {
+  .alive:hover {
     background-color: #567366; }
 
 /*# sourceMappingURL=app.css.map */
