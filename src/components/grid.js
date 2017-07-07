@@ -6,9 +6,9 @@ export const setGrid = (height, width, random = true) => {
             let status;
             if(random) {
                 if (Math.random() > 0.75)
-                    status = 'new';
+                    status = 'alive';
                 else
-                    status = 'died';
+                    status = 'dead';
             }
             row.push({
                 X: x,
