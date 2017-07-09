@@ -1,7 +1,8 @@
 import {connect} from "react-redux";
 
 import {Board} from "./Board";
-import {toggleCell} from "./actions";
+import { toggleCell, advanceStep,
+        randomizeBoard, clearBoard } from "./actions";
 
 const mapStateToProps = state => {
     return {
@@ -11,8 +12,20 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        toggleCell(X, Y) {
-            dispatch(toggleCell(X, Y));
+        toggleCell(x, y) {
+            dispatch(toggleCell(x, y));
+        },
+
+        advanceStep() {
+            dispatch(advanceStep());
+        },
+
+        randomizeBoard() {
+            dispatch(randomizeBoard());
+        },
+
+        clearBoard() {
+            dispatch(clearBoard());
         }
     }
 };

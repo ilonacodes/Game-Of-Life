@@ -1,6 +1,8 @@
 $alive: #97B1A6;
 $td-color: #333;
 $td-hover: #ccc;
+$button: #C9C5BA;
+$button-border: #698996;
 
 html {
   height: 100%;
@@ -18,11 +20,7 @@ body {
 }
 
 table {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 tr {
@@ -33,8 +31,8 @@ tr {
 
 td {
   border: 2px solid $td-color;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -52,3 +50,24 @@ td:hover {
   }
 }
 
+.buttons {
+  text-align: center;
+  margin: 1rem 0;
+
+  .button {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    background-color: $button;
+    border: 1px solid $button-border;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background-color: white;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

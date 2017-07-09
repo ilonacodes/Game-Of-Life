@@ -8,12 +8,8 @@ import thunk from "redux-thunk";
 import {boardReducer} from "./components/reducers";
 import {BoardContainer} from "./components/BoardContainer";
 
-const App = () => <div>hello world</div>;
-const dummyReducer = (state = {}, action) => state;
-
 const store = createStore(
     combineReducers({
-        dummyReducer,
         routing: routerReducer,
         board: boardReducer,
     }),
@@ -25,8 +21,7 @@ const history = syncHistoryWithStore(hashHistory, store);
 const Main =
     <Provider store={store}>
         <Router history={history}>
-            <Route path='/' component={App}/>
-            <Route path='/board' component={BoardContainer}/>
+            <Route path='/' component={BoardContainer}/>
         </Router>
     </Provider>;
 
