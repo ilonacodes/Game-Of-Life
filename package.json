@@ -21,13 +21,14 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "enzyme": "^2.8.2",
+    "gh-pages": "^1.0.0",
     "jasmine-core": "^2.6.1",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.1.1",
     "karma-firefox-launcher": "^1.0.1",
     "karma-jasmine": "^1.1.0",
     "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^2.0.3",
+    "karma-webpack": "^2.0.4",
     "react-addons-test-utils": "^15.5.1",
     "react-test-renderer": "^15.5.4",
     "redux-devtools": "^3.4.0",
@@ -38,8 +39,10 @@
     "test": "karma start",
     "webpack": "webpack -w",
     "start": "cd public && python -m SimpleHTTPServer",
-    "scss": "sass --watch src/scss/app.scss:public/app.css"
+    "scss": "sass --watch src/scss/app.scss:public/app.css",
+    "deploy": "gh-pages -d public -r git@github.com:ilonacodes/Game-Of-Life"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "http://ilonacodes.github.io/Game-Of-Life"
 }
