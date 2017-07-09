@@ -1,0 +1,52 @@
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; }
+
+.container {
+  flex: 1; }
+
+table {
+  margin: 0 auto; }
+
+tr {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap; }
+
+td {
+  border: 2px solid #333;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+
+td:hover {
+  background-color: #ccc; }
+
+.alive {
+  background-color: #97B1A6; }
+  .alive:hover {
+    background-color: #567366; }
+
+.buttons {
+  text-align: center;
+  margin: 1rem 0; }
+  .buttons .button {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    background-color: #C9C5BA;
+    border: 1px solid #698996;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem; }
+    .buttons .button:hover {
+      background-color: white; }
+    .buttons .button:focus {
+      outline: none; }
+
+/*# sourceMappingURL=app.css.map */
